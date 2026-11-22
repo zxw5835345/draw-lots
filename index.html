@@ -383,7 +383,7 @@
 
     <div class="btns">
       <button id="reset" class="accent" style="flex:1">重新开始</button>
-      <button id="sample" class="ghost">示例</button>
+      <button id="sample" class="ghost">恢复名单</button>
       <button id="clearNames" class="ghost">清空</button>
     </div>
 
@@ -438,7 +438,7 @@
   "use strict";
 
   var PALETTE = ["#f3dfae", "#e3c47f", "#c9a44f", "#efe8d8", "#b8934a", "#fff4d6"];
-  var SAMPLE = ["张伟", "王芳", "李娜", "刘洋", "陈晨", "杨帆", "赵磊", "周敏", "吴桐", "徐蕾"];
+  var SAMPLE = ["周俊峰", "山兴华", "王泽涛", "周福庭", "刘振生", "代小航", "朱子瑞", "王建翔", "郭宇", "赵轩唯", "谢知翰", "林浩", "周轩熠", "吴相玮", "韩子轩", "姜斌", "苏博林", "葛铭浩", "于凯歌", "朱昱霖", "张家麟", "宋一凡", "初明智", "陈政宇", "彭军权", "马经哲", "韦丽萍", "宋茹雪", "张晓轩", "王雨晴"];
 
   var $ = function (s) { return document.querySelector(s); };
 
@@ -1043,7 +1043,7 @@
     renderHistory();
     updateStats();
     saveSettings();
-    toast("已填入示例名单");
+    toast("已恢复默认名单");
   });
 
   el.clearNames.addEventListener("click", function () {
